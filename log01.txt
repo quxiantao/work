@@ -1,0 +1,40 @@
+*   commit cbb806f0e0363d47e8b45656bcf37476eaf97692
+|\  Merge: 7d17dae 7d8c8be
+| | Author: quxiantao <347194170@qq.com>
+| | Date:   Tue Aug 27 10:44:13 2019 +0800
+| | 
+| |     Merge branch 'develop'
+| |     合并登陆模块到master分支
+| | 
+| * commit 7d8c8bedf7ad6dc564fb65ee12aa4e26b0095e6a
+| | Author: quxiantao <347194170@qq.com>
+| | Date:   Tue Aug 27 10:42:53 2019 +0800
+| | 
+| |     login feature
+| | 
+* | commit 7d17daef12bc59d08378c4a4325b06e0a9e210cb
+| | Author: quxiantao <347194170@qq.com>
+| | Date:   Tue Aug 27 10:37:52 2019 +0800
+| | 
+| |     master
+| |   
+* |   commit 226719809d39097805167406460b97cda70aa7fb
+|\ \  Merge: 7f12fc4 c50f051
+| |/  Author: quxiantao <347194170@qq.com>
+| |   Date:   Tue Aug 27 10:26:47 2019 +0800
+| |   
+| |       Merge branch 'develop'
+| |       
+| |       你好，这是关于合并的原因和解释
+| | 
+| * commit c50f051bf0521bb5dfe086a122e53b5e6b232470
+|/  Author: quxiantao <347194170@qq.com>
+|   Date:   Tue Aug 27 10:21:53 2019 +0800
+|   
+|       develop01
+| 
+* commit 7f12fc44e9023b19c41574c17ed381657ecc4f5d
+  Author: quxiantao <347194170@qq.com>
+  Date:   Tue Aug 27 10:18:26 2019 +0800
+  
+      master1.0
