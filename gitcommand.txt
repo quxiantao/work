@@ -1,0 +1,70 @@
+git工具使用命令
+
+0 打开git控制窗口
+文件夹/工作空间内右键选择git bash here
+
+1 初始化git库
+git init
+将创建.git 隐藏文件目录，代表git库创建成功
+
+2 关联远程库
+git remote add [自命名远程库名 exp origin] [远程库地址:git地址，https地址]
+
+3 拉取远程库内容
+git pull -rebase 远程库名 分支名
+
+4 克隆远程库
+克隆远程库的功能相当于1+2+3的结果
+git clone 远程库地址 [文件夹名:如果不配置默认采用远程库的名称]
+
+5 添加修改到缓冲区（stage）
+git add filename 添加修改的文件到stage
+git add .
+git add -A 添加全部的修改文件到stage
+注意：stage就是index文件
+
+6 添加stage的变化到版本库
+git commit -m'提交注释的内容'
+注意：如果没有-m参数可能会打开编辑器进行输入
+
+7 同步版本库的内容到远程仓库
+git push -u 远程库名  分支名
+注意：-u参数首次进行关联 
+简化 git push
+
+8 分支管理命令
+git branch 查看分支信息
+git branch 分支名 创建分支
+git branch -d 分支名 删除分支
+git checkout 分支名 切换分支
+git checkout -b 分支名 创建分支并切换分支
+
+9 远程分支命令
+git remote -v 查看远程信息
+git remote add orgin 远程库地址
+git remote rm origin
+
+====================================
+
+20. 显示版本历史 
+git log --graph
+命令的退出
+command：键盘上的q
+
+21. 显示全部版本历史
+git reflog
+
+21. 合并分支
+git merge 合并命令
+git merge --no-ff -m"注释内容" develop
+没有-m 参数会打开编辑器要求输入内容
+
+按insert键切换 编辑状态 插入/替换
+按esc进入命令状态
+输入":wq"退回到命令行
+
+=====================================
+linux命令
+mkdir 创建文件夹
+touch 创建文件
+clear 清屏
