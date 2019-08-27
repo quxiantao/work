@@ -6,15 +6,6 @@ rebase ³Æ×÷ÑÜºÏ¡£ÑÜºÏÓÐÁ½¸ö²½Öè£º1.ÕÒµ½ÁË¹«¹²×æÏÈÖ®ºó£¬»á°ÑdevelopµÄcommit ÒÀ´Î¼
 
 merge  ³ÉÎªÈÚºÏ¡£ÕÒµ½¹«¹²×æÏÈµÄcommit,È»ºó±È½ÏÁ½¸ö·ÖÖ§¶¥µãµÄcommit£¬½øÐÐ²îÒì»¯µÄ±È½Ï£¬Éú³ÉÒ»¸öÐÂµÄcommit¼ÓÈëµ½master·ÖÖ§ÉÏ ,Õâ¸öcommit±È½ÏÌØÊâ»áÖ¸ÏòÁ½¸ö¸¸½Úµã£º
 
-½â¾ö³åÍ»Ö®ºó£¬ÐèÒª½«1.txt½øÐÐaddÒ»´Î£¬À´¸æËßgitÎÒÃÇ½â¾öÁË³åÍ»[ git add 1.txt]£¬ÕâÑù¾Í¿ÉÒÔ½Ó×ÅºÏ²¢ÁË£¬¶ÔÓÚ
-
-mergeÀ´ËµÆäÊµÊÇ½øÐÐÐÂµÄÌá½»£¬git commitÒ»´ÎÖ®ºó¾ÍÍê³ÉÁËºÏ²¢¡£¶ÔÓÚgit rebaseÔòÊ¹ÓÃgit rebase --continueÀ´Íê
-
-³ÉºÏ²¢
- ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª 
-°æÈ¨ÉùÃ÷£º±¾ÎÄÎªCSDN²©Ö÷¡¸¡¸ÁÙ½­ÏÉ¡¹¡¹µÄÔ­´´ÎÄÕÂ£¬×ñÑ­CC 4.0 by-sa°æÈ¨Ð­Òé£¬×ªÔØÇë¸½ÉÏÔ­ÎÄ³ö´¦Á´½Ó¼°±¾ÉùÃ÷¡£
-Ô­ÎÄÁ´½Ó£ºhttps://blog.csdn.net/xuesuc/article/details/51524965
-
 
 gitÎÄ¼þ×´Ì¬
 ÎÄ¼þ×´Ì¬£ºignore(ºöÂÔ×´Ì¬)¡¢untrack(Î´¸ú×Ù)¡¢track(¸ú×Ù)ÈýÖÖ×´Ì¬¡£ÖØµã·ÖÎö¸ú×ÙÏÂµÄÈýÖÖ¹ÜÀí×´Ì¬£ºÎ´ÐÞ¸Ä£¬ÐÞ¸Ä£¬ÔÝ´æ¡£
