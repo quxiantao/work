@@ -3,7 +3,7 @@
 白日依山尽
 黄河入海流
 
-develop is add
+master is add
 
 欲穷千里目
 更上一层楼
