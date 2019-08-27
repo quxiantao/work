@@ -16,6 +16,9 @@ git pull -rebase 远程库名 分支名
 4 克隆远程库
 克隆远程库的功能相当于1+2+3的结果
 git clone 远程库地址 [文件夹名:如果不配置默认采用远程库的名称]
+默认克隆到本地的分支是master分支
+如果要同步develop分支【自定义】 可以用以下命令 
+git checkout -b develop origin/develop
 
 5 添加修改到缓冲区（stage）
 git add filename 添加修改的文件到stage
@@ -35,9 +38,19 @@ git push -u 远程库名  分支名
 8 分支管理命令
 git branch 查看分支信息
 git branch 分支名 创建分支
-git branch -d 分支名 删除分支
+git branch -d 分支名 删除分支【注意参数D为强行删除分支】
 git checkout 分支名 切换分支
 git checkout -b 分支名 创建分支并切换分支
+建立本地分支和远程分支的关联
+git branch --set-upstream branch-name origin/branch-name
+
+多人合作流程 1 试图push 2 失败就试图pull 3 解决冲突 4 再push
+
+
+复制一个特定的提交到当前分支
+git cherry-pick commit-id 将其他分支的提交复制到当前分支并生成一个不同的提交
+
+
 
 9 远程分支命令
 git remote -v 查看远程信息
@@ -45,16 +58,50 @@ git remote add orgin 远程库地址
 git remote rm origin
 
 ====================================
+10 工作现场处理
+git stash 	隐藏工作现场
+git stash list  查看工作现场
+git stash appy  回复工作现场 例如：git stash apply stash@{0}
+git stash drop	删除stash
+git stash pop   恢复工作现场同时删除
 
-20. 显示版本历史 
-git log --graph
+
+11 标签管理tag
+git tag		显示标签
+git tag 标签名	创建标签
+git tag -d 标签 删除标签
+git show 标签   显示标签的详细内容
+
+git tag -a <tagname> -m "注释内容"
+
+12 版本信息的取回
+git reset --hard HEAD^^ 版本回退到上已版本
+git reset --hard commit-id （版本前7位或者全部）
+
+git checkout -- filename 把工作区中相应文件的修改全部撤销 注意修改未添加到暂存区
+git reset HEAD file      把添加到stage中的修改退回到工作区
+
+HEAD 指向当前分支 当前分支指向提交commit
+
+
+
+13 查看工作区和版本库中最新版本的区别
+git diff head -- filename
+
+
+====================================
+
+20. 显示版本历史
+git log  	显示历史版本	
+git log --graph 图形显示历史版本
+git log --pretty=oneline
 命令的退出
 command：键盘上的q
 
 21. 显示全部版本历史
 git reflog
 
-21. 合并分支
+21. 合并分支【合并指定分支到当前分支】
 git merge 合并命令
 git merge --no-ff -m"注释内容" develop
 没有-m 参数会打开编辑器要求输入内容
@@ -68,3 +115,7 @@ linux命令
 mkdir 创建文件夹
 touch 创建文件
 clear 清屏
+
+分支 == 时间线
+
+cat 文件名 查看文件内容
